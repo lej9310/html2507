@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index: 값이 클수록 해당 요사가 앞에 위치하도록</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .black_box {
+            position: relative;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            z-index: 1;            
+        }
+
+        .gray_box {
+            position: absolute;
+            background: gray;
+            height: 200px;
+            width: 200px;
+            left: 50px;
+            top: 20px;
+            z-index: 3;
+        }
+
+        .green_box {
+            position: absolute;
+            background: lightgreen;
+            height: 200px;
+            width: 200px;
+            left: 100px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Z-index Example</h1>
+    <p>An element with greater stack order is always above an element with a lower stack order.</p>
+    <div class="container">
+        <div class="black_box">black box (z-index: 1)</div>
+        <div class="gray_box">gray box (z-index: 3)</div>
+        <div class="green_box">green box (z-index: 2)</div>
+    </div>
+</body>
+
+</html>

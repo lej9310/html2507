@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float의 clearfix</title>
+    <style>
+        div {
+            border: 3px solid lightgreen;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: left;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix1::after {
+            content:"";
+            clear: left;
+            display: block;
+        }
+
+        .clearfix2::after {
+            /* 가상 요소에 빈 컨텐츠 생성 */
+            content: "";
+            /* 왼쪽, 오른쪽 float 모두 해제 */
+            clear: right;
+            /* 블록 레벨 박스 생성 (=block/호환성이 더 좋음) */
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Without Clearfix</h2>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+    <div class="clearfix1">
+        <img class="img1" src="./images/tr1.png" alt="tr1" width="100px" height="100px"> Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <h2>With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+    <div class="clearfix2">
+        <img class="img2" src="./images/tr2.png" alt="tr2" width="100px" height="100px"> Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+</body>
+
+</html>
