@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px 20px 5px 20px;            
+        }
+
+        tr.head {
+            text-align: center;
+            font-weight: bold;
+            background-color: lightblue;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        li::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            /* 불릿 이미지 너비 */
+            height: 15px;
+            /* 불릿 이미지 높이 */
+            margin-right: 5px;
+            /* 불릿과 텍스트 간 간격 */
+            background-image: url(./attach.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* 이미지 전체를 꽉 채워서 보이도록 */
+            vertical-align: middle;
+            /* 텍스트와 수직 가운데 정렬 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>나의 과제방</h1>
+    <table>
+        <tr class="head">
+            <td>일자</td>
+            <td>과제 업로드</td>
+        </tr>
+        <tr>
+            <td>DAY01_0716</td>
+            <td>
+                <ul>
+                    <li><a href="./day01_0716/assign_1.html" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY02_0717</td>
+            <td>
+                <ul>
+                    <li><a href="./day02_0717/index_table.html" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY03_0718</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="./day03_0718/table5.html" target="_blank">Attach1</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY04_0721</td>
+            <td>
+                <ul>
+                    <li><a href="./day04_0721/assign4.html" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY05_0722</td>
+            <td>
+                <ul>
+                    <li><a href="./day05_0722/p237_quiz_1.html" target="_blank">Attach1</a></li>
+                    <li><a href="./day05_0722/p238_quiz_2.html" target="_blank">Attach2</a></li>
+                    <li><a href="./day05_0722/p286_quiz_1.html" target="_blank">Attach3</a></li>
+                    <li><a href="./day05_0722/p287_quiz_2.html" target="_blank">Attach4</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY06_0723</td>
+            <td>
+                <ul>
+                    <li><a href="./day06_0723/p371_quiz_1.html" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY07_0724</td>
+            <td>
+                <ul>
+                    <li><a href="./" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY08_0725</td>
+            <td>
+                <ul>
+                    <li><a href="./" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>DAY09_0728</td>
+            <td>
+                <ul>
+                    <li><a href="./" target="_blank">Attach1</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
