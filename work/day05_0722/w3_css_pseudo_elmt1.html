@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::first-line Pseudo-element</title>
+    <style>
+        p::first-line {
+            color: red;
+            font-variant: small-caps;
+        }
+        p::first-letter {
+            color: blue;
+            font-size: xx-large;
+        }
+        h1::before {
+            content: url(./images/tangerine.png);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a heading with tangerine emoji.</h1>
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text.</p>
+</body>
+
+</html>

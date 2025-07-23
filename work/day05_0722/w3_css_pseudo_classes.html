@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor pseudo classes</title>
+    <style>
+        /*  unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        a.highlight:hover {
+            color: aqua;
+            font-size: 22px;
+        }
+
+        div {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        div:hover {
+            background-color: blue;
+        }
+
+        div.Tada {
+            background-color: transparent;
+            /* none으로 적으면 안 됨 */
+            color: black;
+            padding: 0;
+        }
+
+        div.Tada:hover p {
+            display: block;
+        }
+
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .ch p:first-child {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Stylink a link depending on state</h2>
+    <p><b><a href="https://www.w3schools.com/css/" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS denfinition in order to be effective</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <hr>
+    <br>
+
+    <p><a class="highlight" href="#">CSS Syntax</a></p>
+    <p><a href="#">CSS Tutorial</a></p>
+    <hr>
+    <br>
+
+    <div>Mouse over me</div>
+
+    <div class="Tada"> Hover over this div element to show the p element.
+        <p>Tada! Here I am!</p>
+    </div>
+    <hr>
+    <br>
+
+    <div>
+        <p class="ch">This is first-child text.</p>
+        The text color is blue.
+    </div>
+</body>
+
+</html>

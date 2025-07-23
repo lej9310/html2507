@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>readonly와 required 속성 사용하기</title>
+    <style>
+        span {
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+        }
+    </style>    
+    <link rel="shortcut icon" href="./images/1f49a.svg" type="image/x-icon">
+</head>
+
+<body>
+    <h1>레드향 주문하기</h1>
+    <span>readonly --- 읽기 전용</span>
+    <span>autofocus --- 입력 포커스 추가</span>
+    <span>required --- 입력 필수</span>
+    <span>placeholder --- 입력을 안내하기 위한 힌트</span>
+
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul id="shipping">
+                <li>
+                    <label for="prod">주문 상품</label>
+                    <input type="text" id="prod" value="상품용 3KG" readonly>
+                </li>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name" autofocus required>
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr" required>
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email">
+                </li>
+                <li>
+                    <label for="user_phone">연락처</label>
+                    <input type="tel" id="user_phone" placeholder="하이픈을 빼고 입력해 주세요(01012345678)" required>
+                </li>
+                <li>
+                    <label for="d_day">배송 지정</label>
+                    <input type="date" id="d_day"> <small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+            </ul>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+
+</html>

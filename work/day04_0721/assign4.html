@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 좌우 분할 레이아웃 주문 페이지</title>
+    <style>
+        span {
+            background-color: yellow;
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+        }
+
+        /* 전체 화면을 좌우 분할하는 컨테이너 */
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 왼쪽 영역 (사진) */
+        .left {
+            flex: 1;
+            /* 컨테이너 너비의 1만큼 차지 */
+            background-color: white;
+            /* 배경색 */
+            display: flex;
+            /* 여기를 사진 여러개 넘기는 걸로 바꾸고 싶은데 */
+            justify-content: left;
+            align-items: baseline;
+        }
+
+        /* 이미지 크기 조절 */
+        .left img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            /* 비율을 유지하여 꽉 채우기 */
+        }
+
+        /* 오른쪽 영역 (폼)) */
+        .right {
+            flex: 1;
+            /* 왼쪽과 동일 비율을 차지하도록 */
+            padding: 40px;
+            background-color: white;
+            display: flex;
+            justify-content: right;
+            align-items: baseline;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
+
+    </style>
+    <link rel="shortcut icon" href="./images/tangerine.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>레드향 주문하기</h1>
+    <div class="container">
+        <div class="left">
+            <img src="./images/gift_tangerine.png" alt="레드향 선물세트">
+        </div>
+
+        <div class="right">
+            <form>
+                <fieldset>
+                    <legend>배송 정보</legend>
+                    <ul id="shipping">
+                        <li>
+                            <label for="prod">주문 상품</label>
+                            <input type="text" id="prod" value="상품용 3KG" readonly>
+                        </li>
+                        <li>
+                            <label for="user_name">이름</label>
+                            <input type="text" id="user_name" autofocus required>
+                        </li>
+                        <li>
+                            <label for="addr">배송 주소</label>
+                            <input type="text" id="addr" required>
+                        </li>
+                        <li>
+                            <label for="email">이메일</label>
+                            <input type="email" id="email">
+                        </li>
+                        <li>
+                            <label for="user_phone">연락처</label>
+                            <input type="tel" id="user_phone" placeholder="하이픈을 빼고 입력해 주세요(01012345678)" required>
+                        </li>
+                        <li>
+                            <label for="d_day">배송 지정</label>
+                            <input type="date" id="d_day"> <small>(주문일로부터 최소 3일 이후)</small>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="주문하기">
+                    <input type="reset" value="취소하기">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

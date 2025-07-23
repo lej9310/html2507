@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 폰트 코드 붙여 넣기</title>
+    <style>
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            display: inline-block;
+            background-color: lightpink;
+            border: 1px solid black;
+            padding: 1% 2% 1% 2%;
+            margin: 1%;
+        }
+
+        a {
+            text-decoration: none;
+            /* 링크의 밑줄 없애기 */
+        }
+
+        a:link,
+        a:visited,
+        a:hover {
+            /* , 없으면 적용 안 됨!!*/
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="https://fontawesome.com/icons/house?f=classic&s=solid" target="_blank">메뉴</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-calendar-check"></i>
+                <a href="https://fontawesome.com/icons/calendar-check?f=classic&s=solid" target="_blank">메뉴2</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-battery-quarter"></i>
+                <a href="https://fontawesome.com/icons/battery-quarter?f=classic&s=solid" target="_blank">메뉴3</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

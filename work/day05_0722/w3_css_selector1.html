@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Selector</title>
+    <style>
+        #para1 {
+            text-align: center;
+            color: red;
+        }
+
+        .para2 {
+            text-align: center;
+            color: blue;
+        }
+
+        .large {
+            font-size: 300%;
+        }
+
+        .border {
+            border: 10px solid yellow;
+        }
+
+        /* 모든 태그에 적용 */
+        * {
+            text-align: left;
+            color: darkgreen;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The CSS Grouping Selector</h1>
+    <h2>The Grouping Selector selects all the HTML elements with the same style definitions.</h2>
+
+    <p id="para1">First paragraph will be affected by the style.</p>
+    <p class="para2 large">Second paragraph will be affected by the style.</p>
+    <p class="para2 border">Second paragraph will be affected by the style.</p>
+    <p>Just p tag.</p>
+    <p>p tag affected by universal selector.</p>
+</body>
+
+</html>

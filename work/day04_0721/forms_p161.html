@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 태그를 사용해 버튼 삽입하기</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul id="shipping">
+            <li>
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" autofocus>
+            </li>
+            <li>
+                <label for="addr">배송 주소</label>
+                <input type="text" id="addr">
+            </li>
+            <li>
+                <label for="email">이메일</label>
+                <input type="email" id="email">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="d_day">배송지정</label>
+                <input type="date" id="d_day"><small>(주문일로부터 최소 3일 이후)</small>
+            </li>            
+            <li>
+                <label for="memo">메모</label>
+                <textarea id="memo" cols="40" rows="4"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+
+    <button type="submit">주문하기</button>
+    <button type="reset">취소하기</button>
+</body>
+
+</html>

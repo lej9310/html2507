@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프런트엔드 개발자 지원서</title>
+    <!-- <style>
+        ul {
+            list-style-type: none;
+            padding: 10;
+            margin: 0;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <fieldset>
+        <form>
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+            <hr>
+            <br>
+            <h4>개인 정보</h4>
+            <ul class="no_bullets">
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name" placeholder="공백 없이 입력하세요.">
+                </li>
+                <li>
+                    <label for="cotact">연락처</label>
+                    <input type="tel" id="contact">
+                </li>
+            </ul>
+
+            <h4>지원 분야</h4>
+            <ul class="no_bullets">
+                <li>
+                    <input type="radio" name="apply" id="web_pub" value="web_pub">
+                    <label for="web_pub">웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <input type="radio" name="apply" id="web_app" value="web_app">
+                    <label for="web_app">웹 애플리케이션 개발</label>
+                </li>
+                <li>
+                    <input type="radio" name="apply" id="dev_env" value="dev_env">
+                    <label for="dev_env">개발 환경 개선</label>
+                </li>
+            </ul>
+
+            <h4>지원 동기</h4>
+            <textarea id="memo" cols="40" rows="4" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+
+            <input type="button" value="접수하기">            
+            <button type="reset">다시 쓰기</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+ul.no_bullets {
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+}
+
+h1 {
+    padding: 10px;
+    background-color: blueviolet;
+    color: beige;
+    text-align: center;
+}

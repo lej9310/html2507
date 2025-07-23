@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트를 여러 줄 입력할 수 있는 [메모] 필드 만들기</title>
+</head>
+
+<body>
+    <fieldset>
+        <label for="user_name">이름</label>
+        <input type="text" id="user_name" autofocus>
+        <br>
+        <label for="user_addr">배송 주소</label>
+        <input type="text" id="user_addr">
+        <br>
+        <label for="user_email">이메일</label>
+        <input type="email" id="user_email">
+        <br>
+        <label for="user_phone">연락처</label>
+        <input type="tel" id="user_phone" placeholder="하이픈을 빼고 입력해 주세요(01012345678)">
+        <br>
+        <label for="date">배송 지정</label><small>(주문일로부터 최소 3일 이후)</small>
+        <input type="date" id="date">
+        <br>
+        <label for="memo">메모</label>
+        <textarea id="memo" cols="40" rows="4"></textarea>
+    </fieldset>
+</body>
+
+</html>

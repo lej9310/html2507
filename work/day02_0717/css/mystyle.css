@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+#my_id {
+    color: red;
+}
+
+.my_class {
+    color: darkgreen;
+    border: 5px dashed darkgreen;
+}
