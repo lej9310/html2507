@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앵커 예시</title>
+    <style>
+        .anchor {
+            anchor-name: --myAnchor;
+            background-color: skyblue;
+            width: 30%;
+            height: 30%;
+            padding: 10%;
+            color: red;
+            font-weight: bold;
+        }
+
+        .tooltip {
+            position: fixed;
+            /* --myAnchor로 이름이 지정된 요소에 묶임 */
+            position-anchor: --myAnchor;
+            /* 앵커 요소의 위쪽 위치에 붙음 */
+            top: anchor(top);
+            /* 앵커 요소의 왼쪽 위치에 붙음 */
+            left: anchor(left);
+            margin-top: 10px;
+            background: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>앵커 예시: 툴팁이 앵커의 위쪽 왼쪽에 붙도록</p>
+    </div>
+    <div class="anchor">
+        <p>앵커 (기준이 되는 요소)</p>        
+    </div>
+
+    <div class="tooltip">
+        앵커에 붙은 툴팁
+    </div>
+</body>
+
+</html>

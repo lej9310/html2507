@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: red;
+            color: white;
+        }
+
+        /*  상대 위치 지정 */
+        #two {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background: red;
+        }
+
+        /* 절대 위치 지정 */
+        #three {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="one">one</div>
+    <div class="box" id="two">two</div>
+    <div class="box" id="three">three</div>
+    <div class="box" id="four">four</div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position: sticky (relative + fixed)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        dl>div {
+            background: #fff;
+            padding: 24px 0 0 0;
+        }
+
+        dt {
+            background: #b8c1c8;
+            border-bottom: 1px solid #717d85;
+            border-top: 1px solid #717d85;
+            color: #fff;
+            /* font size - line height */
+            font: bold 18px/21px Helvetica,
+                Arial,
+                sans-serif;
+            margin: 0;
+            padding: 2px 0 0 12px;
+            /* WebKit 브라우저에서 sticky 효과가 적용되도록 */
+            /* 최신 브라우저는 그냥 sticky만 써도 무방 */
+            position: -webkit-sticky;
+            /* 문서 흐름 내 원래 위치를 따라가다가, 스크롤을 내리면 지정한 위치에 도달했을 때 그 위치에 고정 */
+            position: sticky;
+            top: -1px;
+        }
+
+        dd {
+            font:
+                bold 20px/45px Helvetica;
+            Arial,
+            sans-serif;
+            margin: 0;
+            padding: 0 0 0 12px;
+            white-space: nowrap;
+        }
+
+        /* 각 연속된 dd중 첫 번째 dd 다음에 오는 dd에만 */
+        dd+dd {
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- dl: 용어와 설명을 쌍으로 묶어 구조화된 목록 형태로 표현 -->
+    <!-- dt: 용어(term) -->
+    <!-- dd: 설명(description) -->
+    <dl>
+        <div>
+            <dt>A</dt>
+            <dd>Andrew W.K.</dd>
+            <dd>Apparat</dd>
+            <dd>Arcade Fire</dd>
+            <dd>At The Drive-In</dd>
+            <dd>Aziz Ansari</dd>
+        </div>
+
+        <div>
+            <dt>C</dt>
+            <dd>Chromeo</dd>
+            <dd>Common</dd>
+            <dd>Converge</dd>
+            <dd>Crystal Castles</dd>
+            <dd>Cursive</dd>
+        </div>
+
+        <div>
+            <dt>E</dt>
+            <dd>Explosions In The Sky</dd>
+        </div>
+
+        <div>
+            <dt>T</dt>
+            <dd>Ted Leo &amp; The Pharmacists</dd>
+            <dd>T-Pain</dd>
+            <dd>Thrice</dd>
+            <dd>TV On The Radio</dd>
+            <dd>Two Gallants</dd>
+        </div>
+    </dl>
+</body>
+
+</html>
