@@ -18,12 +18,13 @@
     }
 
     /* Do it! 미디어 쿼리 사용  */
+    /* 미디어 쿼리: 사이트에 접속하는 장치에 따라 특정한 CSS 스타일을 사용하는 방법 */
     body {
       background: url(./images/bg_light.jpg) no-repeat fixed;
       background-size: cover;
     }
 
-    /* 화면 너비 줄이면 배경 이미지 변경 */
+    /* 768px ~ 1023px 배경 이미지 변경 */    
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       body {
         background: url(./images/bg_dark.jpg) no-repeat fixed;
@@ -32,7 +33,7 @@
       }
     }
 
-    /* 화면 너비 더 작아지면 배경 이미지 변경 */
+    /* 767px이하 배경 이미지 변경 */
     @media screen and (max-width: 767px) {
       body {
         background: url(./images/bg_small.jpg) no-repeat fixed;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position anchor: 앵커에 상대적으로 위치 지정</title>
+    <style>
+        .anchor {
+            background-color: yellow;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            width: 5%;
+            text-align: center;            
+        }
+
+        #anchor1 {
+            anchor-name: --myAnchor1,
+        }
+
+        #anchor4 {
+            anchor-name: --myAnchor2;
+        }
+
+        #infobox1 {
+            position-anchor: --myAnchor1;            
+            background-color: lightpink;
+            position: fixed;
+            top: anchor(top);
+            right: anchor(right);            
+            width: 250PX;            
+        }
+
+        #infobox2 {
+            position-anchor: --myAnchor2;
+            background-color: lightblue;
+            position: fixed;
+            left: anchor(left);
+            bottom: anchor(bottom);
+            width: 250PX;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="anchor">
+        <div id="anchor1">⚓︎</div>
+        <div id="anchor2">⚓︎</div>
+        <div id="anchor3">⚓︎</div>
+        <div id="anchor4">⚓︎</div>
+    </div>
+
+    <div id="infobox1">
+        <form>
+            <label for="anchor1-anchor-select">Place infobox on:</label>
+            <select id="anchor1-anchor-select">
+                <option value="1">Anchor 1</option>
+                <option value="2">Anchor 2</option>
+                <option value="3">Anchor 3</option>
+                <option value="4">Anchor 4</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="infobox2">
+        <form>
+            <label for="anchor2-anchor-select">Place infobox on:</label>
+            <select id="anchor2-anchor-select">
+                <option value="1">Anchor 1</option>
+                <option value="2">Anchor 2</option>
+                <option value="3">Anchor 3</option>
+                <option value="4">Anchor 4</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>

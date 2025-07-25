@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 폰트 사이즈 단위</title>
+    <style>
+        #r_unit1 {
+            font-size: 1%;
+        }
+
+        #r_unit2 {
+            font-size: 1em;
+        }
+
+        #r_unit3 {
+            font-size: 1rem;
+        }
+
+        #r_unit4 {
+            font-size: 1vw;
+        }
+
+        #r_unit5 {
+            font-size: 1vh;
+        }
+
+        #r_unit6 {
+            font-size: 1vmin;
+        }
+
+        #r_unit7 {
+            font-size: 1vmax;
+        }
+
+        #r_unit8 {
+            font-size: larger;
+        }
+
+        #r_unit9 {
+            font-size: small;
+        }
+
+        #r_unit10 {
+            font-size: medium;
+        }
+
+
+        #a_unit1 {
+            font-size: 16px;
+        }
+
+        #a_unit2 {
+            font-size: 16pt;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>상대적 단위</h1>
+    <ul>
+        <li id="r_unit1">%: 부모 요소의 크기에 대한 백분율 값</li>
+        <li id="r_unit2">em: 현재 요소의 글꼴 크기를 기준</li>
+        <li id="r_unit3">rem: root 요소의 글꼴 크기를 기준</li>
+        <!-- viewport : 윈도우 브라우저 사이즈 -->
+        <li id="r_unit4">vw: viewport 너비의 1%</li>
+        <li id="r_unit5">vh: viewport 높이의 1%</li>
+        <li id="r_unit6">vmin: 뷰포트의 작은 치수(너비 또는 높이의) </li>
+        <li id="r_unit7">vmax: 뷰포트의 큰 치수(너비 또는 높이)의 1%</li>
+        <li id="r_unit8">larger: 부모 엘리먼트의 폰트 크기에서 일정 비율로 늘림</li>
+        <li id="r_unit9">small: 부모 엘리먼트의 폰트 크기에서 일정 비율로 줄임</li>
+        <li id="r_unit10">medium: 기본 폰트의 크기에 따라 정해짐</li>
+    </ul>
+    <h1>절대적 단위</h1>
+    <ul>
+        <li id="a_unit1">px: 픽셀 단위, 고정된 크기를 지정할 때 사용</li>
+        <li id="a_unit2">pt, cm, mm, in: 인쇄용 매체에 적합한 단위</li>
+    </ul>
+
+</body>
+
+</html>

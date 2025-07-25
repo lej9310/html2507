@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change html content/attribute values</title>
+</head>
+
+<body>
+    <h2>What can javascript do?</h2>
+    <p id="demo">javascript can change HTML content.</p>
+    <!-- document.getElementById('demo'): id="demo"인 html element 반환-->
+    <!-- .innerHTML: 찾은 요소 내부 콘텐츠. 읽거나 값을 할당할 때 사용-->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello javaScript!'">Click Me!</button>
+
+    <br><br>
+    <hr>
+
+    <h2>What can javascript do?</h2>
+    <p>javascript can change HTML attribute values.</p>
+    <p>In this case javascript changes the value of the src attribute of an image.</p>
+
+    <button onclick="document.getElementByID(light).src='../day08_0725/images/pic_bulbon.gif'">Turn on the light</button>
+    
+    <img id="light" src="../day08_0725/images/pic_bulboff.gif" style="width: 100px;">
+
+    <button onclick="document.getElementById(light).src='pic_bulboff.gif'">Turn off the light</button>
+
+    
+    
+</body>
+
+</html>
