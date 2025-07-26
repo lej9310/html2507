@@ -4,133 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table,
-        tr,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px 20px 5px 20px;            
-        }
-
-        tr.head {
-            text-align: center;
-            font-weight: bold;
-            background-color: lightblue;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0px;
-        }
-
-        li::before {
-            content: "";
-            display: inline-block;
-            width: 15px;
-            /* 불릿 이미지 너비 */
-            height: 15px;
-            /* 불릿 이미지 높이 */
-            margin-right: 5px;
-            /* 불릿과 텍스트 간 간격 */
-            background-image: url(./work/attach.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            /* 이미지 전체를 꽉 채워서 보이도록 */
-            vertical-align: middle;
-            /* 텍스트와 수직 가운데 정렬 */
-        }
-    </style>
+    <title>My Project List</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/my_project.css">
+    <!-- favicon -->
+    <link rel="icon" href="./work/file_folder.svg">
 </head>
 
 <body>
-    <h1>나의 과제방</h1>
-    <table>
-        <tr class="head">
-            <td>일자</td>
-            <td>과제 업로드</td>
-        </tr>
-        <tr>
-            <td>DAY01_0716</td>
-            <td>
-                <ul>
-                    <li><a href="./work/day01_0716/assign_1.html" target="_blank">Attach1</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY02_0717</td>
-            <td>
-                <ul>
-                    <li><a href="./work/day02_0717/index_table.html" target="_blank">Attach1. table</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY03_0718</td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="./work/day03_0718/table5.html" target="_blank">Attach1</a>
-                    </li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY04_0721</td>
-            <td>
-                <ul>
-                    <li><a href="./work/day04_0721/assign4.html" target="_blank">Attach1</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY05_0722</td>
-            <td>
-                <ul>
-                    <li><a href="./work/day05_0722/p237_quiz_1.html" target="_blank">Attach1</a></li>
-                    <li><a href="./work/day05_0722/p238_quiz_2.html" target="_blank">Attach2</a></li>
-                    <li><a href="./work/day05_0722/p286_quiz_1.html" target="_blank">Attach3</a></li>
-                    <li><a href="./work/day05_0722/p287_quiz_2.html" target="_blank">Attach4</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY06_0723</td>
-            <td>
-                <ul>
-                    <li><a href="./work/day06_0723/p311_quiz_1.html" target="_blank">Attach1</a></li>
-                    <li><a href="./work/day06_0723/p312_quiz_2.html" target="_blank">Attach2</a></li>
-                    <li><a href="./work/day06_0723/p340_quiz.html" target="_blank">Attach3</a></li>                                        
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY07_0724</td>
-            <td>
-                <ul>
-                    <li><a href="./work/" target="_blank">Attach1</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY08_0725</td>
-            <td>
-                <ul>
-                    <li><a href="./" target="_blank">Attach1</a></li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>DAY09_0728</td>
-            <td>
-                <ul>
-                    <li><a href="./" target="_blank">Attach1</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <div class="img_wrap">
+        <img src="./work/project1.jpg" alt="project image">
+        <div class="text_on_img">My Project List</div>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr class="head">
+                <td>DAY</td>
+                <td>DATE</td>
+                <td>Attached</td>
+            </tr>
+            <tr>
+                <td>DAY 01.</td>
+                <td>2025.07.16</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/day01_0716/assign_1.html" target="_blank">HTML_Semantic</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 02.</td>
+                <td>2025.07.17</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/day02_0717/index_table.html" target="_blank">HTML_Tables</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 03.</td>
+                <td>2025.07.18</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="./work/day03_0718/table5.html" target="_blank">HTML_상품 소개 페이지</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 04.</td>
+                <td>2025.07.21</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/day04_0721/assign4.html" target="_blank">HTML_주문 페이지</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 05.</td>
+                <td>2025.07.22</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/day05_0722/p237_quiz_1.html" target="_blank">HTML_Table <small>(p237_quiz1)</small></a></li>
+                        <li><a href="./work/day05_0722/p238_quiz_2.html" target="_blank">HTML_주문 페이지 <small>(p238_quiz2)</small></a></li>
+                        <li><a href="./work/day05_0722/p286_quiz_1.html" target="_blank">HTML_border-radius & box-shadow <small>(p286_quiz1)</small></a></li>
+                        <li><a href="./work/day05_0722/p287_quiz_2.html" target="_blank">HTML_여가시간 즐기기 <small>(p287_quiz2)</small></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 06.</td>
+                <td>2025.07.23</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/day06_0723/p311_quiz_1.html" target="_blank">HTML_background-color: rgb(0,0,0) <small>(p311_quiz1)</small></a></li>
+                        <li><a href="./work/day06_0723/p312_quiz_2.html" target="_blank">HTML_모집 포스터</a> <small>(p312_quiz2)</small></li>
+                        <li><a href="./work/day06_0723/p340_quiz_mq.html" target="_blank">HTML_Media Queries <small>(p340_quiz)</small></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 07.</td>
+                <td>2025.07.24</td>
+                <td>
+                    <ul>
+                        <li><a href="./work/" target="_blank">Attach1</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 08.</td>
+                <td>2025.07.25</td>
+                <td>
+                    <ul>
+                        <li><a href="./" target="_blank">Attach1</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>DAY 09.</td>
+                <td>2025.07.28</td>
+                <td>
+                    <ul>
+                        <li><a href="./" target="_blank">Attach1</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
