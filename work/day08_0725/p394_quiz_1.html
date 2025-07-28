@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>연습문제: 3행 3열의 그리드 레이아웃 만들기</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 600px;
+      height: 500px;
+      display: grid;
+      /* 1.fr 단위 사용 */
+      grid-template-columns: repeat(3, 1fr);
+      /* 2. 항목 간 가격 */
+      gap: 10px;
+    }
+
+    .container>div {
+      border: 1px solid #222;
+      text-align: center;
+    }
+
+    /* 홀수 번째 항목, 짝수 번째 항목 배경색*/
+    /* 짝수: red */
+    .container>div:nth-child(even) {
+      background-color: red;
+    }
+
+    /* 홀수: lightcoral */
+    .container>div:nth-child(odd) {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</body>
+
+</html>
