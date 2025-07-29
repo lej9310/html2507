@@ -86,3 +86,12 @@ a:hover {
     vertical-align: middle;
     /* 텍스트와 수직 가운데 정렬 */
 }
+
+.field_off {
+    background: rgba(128, 128, 128, 0.2);
+    color: white;
+}
+
+tr.field_off > a {
+    color: white !important;
+}
