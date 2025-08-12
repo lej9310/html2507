@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>[w3] div 스타일 적용 연습</title>
     <style>
+        div {
+            background-color: yellow;
+        }
+
         div.mycontainer {
-            width: 30%;
-            overflow: inline-block;
-        }        
+            width: 50%;
+            overflow: inline-block;            
+        }
+
+        div.mycontainer div {
+            width: 40%;
+            float: right;
+        }
     </style>
 </head>
 
 <body>
+    <h2>London</h2>
+    <p>London is the patial city of England.</p>
+    <p>London has over 9 million inhabitants.</p>
+
+    <hr>
+    <!-- ==================== -->
+
+    <div>
+        <h2>London</h2>
+        <p>London is the patial city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+
+    <p>The yellow backgroun is added to demonstrate the footprint of the DIV element.</p>
+
+    <hr>
+    <!-- ==================== -->
     <div class="mycontainer">
 
         <div style="background-color: yellow;">

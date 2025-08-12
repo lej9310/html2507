@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     td {
       border: 1px solid black;
       border-collapse: separate;
+      border-spacing: 10px;
     }
   </style>
 </head>
@@ -53,4 +54,43 @@
   </table>
 </body>
 
+<hr>
+<!-- Make Multiple Col element -->
+<h2>Multiple Col Element</h2>
+    <p>Add Multiple col element in the colgroup:</p>
+
+    <table style="width: 90%;">
+        <colgroup>
+            <col span="2" style="background-color: skyblue;">
+            <col span="2" style="background-color: pink;">
+            <col span="3" style="background-color: lightgreen;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>TRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
 </html>

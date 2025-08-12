@@ -4,14 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오디오</title>
+    <title>오디오/ 멀티미디어/객체 파일 삽입하기</title>
 </head>
 
 <body>
-    <h1>웹 문서에 오디오 파일 삽입하기</h1>
     <!-- Do it! audio 태그를 사용해 medias/spring.mp3 파일을 삽입해 보세요. -->
-     <audio src="./medias/spring.mp3" controls></audio>
+    <h1>웹 문서에 오디오 파일 삽입하기</h1>
+    <audio src="./medias/spring.mp3" controls></audio>
 
+    <hr>
+
+    <!-- ================================== -->
+    <h1>웹 문서에 비디오 파일 삽입하기</h1>
+    <video src="./medias/salad.mp4" controls width="700"></video>       
+    <video src="./medias/salad.mp4" controls width="700" poster="./images/salad.jpg"></video>
+
+    <hr>
+
+    <!-- Do it! embed 태그를 사용해 medias/spring.mp3 삽입하기 -->
+    <h1>멀티미디어 파일 삽입하기</h1>
+    <embed src="./medias/spring.mp3" type="audio/mpeg">
+
+    <hr>
+     
+    <!-- ================================== -->
+    <h1>[w3]</h1>
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+    </video>
+    <p>
+        Video courtesy of
+        <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny.</a>
+    </p>
+
+    <hr>
+
+    <!-- Object 태그를 사용해 product.pdf 삽입 -->
+    <h1>웹 문서에 pdf 파일 삽입하기</h1>
+    <object data="./product.pdf" type="application/pdf" width="900" height="800"></object>
 </body>
 
 </html>

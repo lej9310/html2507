@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS에 id 속성 이용하기</title>
 </head>
+
 <body>
 
     <h2>Using the id Attribute in JavaScript</h2>
@@ -12,18 +14,19 @@
 
     <h1 id="myHeader">Hello World!</h1>
     <button onclick="displayResult()">Change text</button>
-    
+
     <h2 id="hello">안녕!</h2>
     <button onclick="displayResult()">Change text</button>
 
-<script>
-    function displayResult() {
-        document.getElementById("myHeader").innerHTML = "Have a nice day!";        
-    }
-    function displayResult() {
-        document.getElementById("hello").innerHTML = "Have a nice day!";
-    }
-</script>
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+        function displayResult() {
+            document.getElementById("hello").innerHTML = "Have a nice day!";
+        }
+    </script>
 
 </body>
+
 </html>
